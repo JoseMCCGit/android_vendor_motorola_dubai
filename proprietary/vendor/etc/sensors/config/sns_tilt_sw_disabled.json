@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:db6ef85b693c37a787b3ce9c0802790d7974f4047b36a2ef91f140a15fef0a1d
-size 266
+{
+  "config": {
+    "hw_platform": [ "MTP", "Dragon", "Surf", "HDK", "QRD"],
+    "soc_id": ["339", "340", "356", "361", "415", "439", "456", "501", "502"]
+  },
+  "sns_tilt": {
+    "owner": "sns_tilt",
+    "enabled": {"ver": "0","type": "int", "data": "0"
+    }
+  }
+}

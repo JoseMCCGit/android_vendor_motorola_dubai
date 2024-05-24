@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:06cb7979f5a7ad2b770c11ef6065417e4aa4b3c68e42d2123915abb4da42b059
-size 872
+// @file sns_panel_status.proto
+//
+// Defines the API for Sending Panel Brightness and other information to a sensor
+//
+
+syntax = "proto2";
+import "nanopb.proto";
+
+// Message IDs
+enum sns_panel_status_msgid {
+  option (nanopb_enumopt).long_names = false;
+
+  // Uses message: sns_panel_status
+  // Purpose: Send panel info to a sensor
+  SNS_PANEL_STATUS = 670;
+}
+
+enum sns_panel_state {
+  option (nanopb_enumopt).long_names = false;
+
+  SNS_PANEL_STATE_PANEL_OFF = 0;
+  SNS_PANEL_STATE_PANEL_ON = 1;
+}
+
+// Message to sensor
+message sns_panel_status
+{
+  // Panel off/on indication
+  required sns_panel_state state = 1 [default = SNS_PANEL_STATE_PANEL_ON];
+
+  // Panel Frequency (Hz) (assumed to generally be either 60 Hz or 90 Hz)
+  required uint32 frequency = 2;
+
+  // Panel Brightness Level (generally from display driver value in sysfs)
+  required int32 brightness = 3;
+}

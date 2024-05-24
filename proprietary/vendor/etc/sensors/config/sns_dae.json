@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fad6abe38796d19fb3ee37a8861ffca16f7fd890c48cd2e1ec0bf5265ae31998
-size 880
+{
+  "config":{
+    "hw_platform": ["MTP","QRD","Dragon","Surf", "HDK"],
+    "soc_id": ["339", "356", "361", "415", "439", "456", "501", "502"]
+  },
+  "dae":{
+      "owner": "sns_dae",
+      "use_sdc":{ "type": "int", "ver": "0",
+                  "data": "1"
+                },
+      "debug_accel_values":{ "type": "int", "ver": "0",
+                  "data": "0"
+                },
+      "dd_msg_mask":{ "type": "int", "ver": "0",
+                  "data": "0"
+                },
+      "enable_qdss":{ "type": "int", "ver": "0",
+                  "data": "0"
+                },
+      "dbg_mask":{ "type": "int", "ver": "0",
+                  "data": "0"
+                },
+      "ulog_msg_mask":{ "type": "int", "ver": "0",
+                  "data": "0x1F"
+                },
+      "fwk_msg_mask":{ "type": "int", "ver": "0",
+                  "data": "0"
+                }
+  }
+}

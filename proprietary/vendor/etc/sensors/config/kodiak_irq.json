@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:970940b92f9554159211fd2ff18e5ec39535ce4152ff39b28b9fc3df5c04685a
-size 156
+{
+  "config": {
+    "hw_platform": ["MTP", "Surf", "RCM" ,"QRD","IDP"],
+    "soc_id": ["475", "497", "498"]
+  },
+  "sns_irq": {
+    "owner": "sns_irq"
+  }
+}

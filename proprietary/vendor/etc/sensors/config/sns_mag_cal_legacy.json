@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bc1dccfa39a4089169fec6e12271fee9f802f54461f6ce0bc5c9d83bd4ff8ac4
-size 306
+{
+  "config": {
+    "hw_platform": ["MTP", "Dragon", "Surf", "HDK", "IDP"],
+    "soc_id": ["291", "246", "300", "301", "305", "321", "336", "341", "360", "393"]
+  },
+  "sns_mag_cal_config": {
+    "owner": "sns_mag_cal",
+    "anomaly_threshold": {"type": "flt","ver": "0",
+      "data": "200.0"
+    }
+  }
+}
